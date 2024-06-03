@@ -1,0 +1,76 @@
+/* Style for the main container */
+#main {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the input field */
+#taskInput {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #c2a9f5;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style for the task list */
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for each task item */
+#taskList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #b30a0a;
+}
+
+/* Style for the checkbox */
+#taskList input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Style for the task text */
+#taskList span {
+    flex: 1;
+    text-align: left;
+}
+
+/* Style for the buttons */
+#taskList button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the edit button */
+#taskList button#edit {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+/* Style for the delete button */
+#taskList button#delete {
+    background-color: #d9534f;
+    color: white;
+}
+/* Add some hover effects for the buttons */
+#taskList button#edit:hover {
+    background-color: #ec971f;
+}
+
+#taskList button#delete:hover {
+    background-color: #c9302c;
+}
